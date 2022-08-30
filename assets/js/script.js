@@ -7,6 +7,10 @@ const lowerChars = 'abcdefghijklmnopqrstuvwxyz';
 const numberChars = '0123456789';
 const specialChars = '!"#$%&\'()*+,-./:;<=>?@[]^_`{|}~';
 
+// Create the function that will generate a password when called
+function generatePassword() {
+}
+
 // Write password to the #password input
 function writePassword() {
   const password = generatePassword(); 
