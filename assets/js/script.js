@@ -9,6 +9,17 @@ const specialChars = '!"#$%&\'()*+,-./:;<=>?@[]^_`{|}~';
 
 // Create the function that will generate a password when called
 function generatePassword() {
+   // Ask the user what length they want their password to be
+   let length = prompt('Please choose a password length between 8 and 128 characters.');
+   // Convert length to a number from a string
+   length = Number(length);
+   // Make sure the chosen length is a valid password length
+   if (length < 8 || length > 128 || Number.isNaN(length)) {
+       alert('Invalid number. Please choose a number between 8 and 128.');
+       // Stop executing the generatePassword function and return an empty string
+       return '';
+   }
+
    // Create pop up messages that the user can respond to with 'Ok' or 'Cancel' with questions about what characters to include 
    const upper = confirm('Would you like to include uppercase letters in your password?');
    const lower = confirm('Would you like to include lowercase letters in your password?');
