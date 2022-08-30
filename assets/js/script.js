@@ -46,6 +46,16 @@ function generatePassword() {
   if (special) {
     possibleCharacters += specialChars;
   }
+  
+  let password = '';
+  // Pick a random character and add it to the password as many times as defined by the length above
+  for (let i = 0; i < length; i++) {
+      // Pick a random character from the possible characters
+      const randomCharacter = possibleCharacters[Math.floor(Math.random() * possibleCharacters.length)];
+      password += randomCharacter;
+  }
+  // Return the password to display on the page
+  return password;
 }
 
 // Write password to the #password input
