@@ -7,7 +7,7 @@
 This website is designed to generate a random password using the characters contained in the code. It will give users the ability to choose their desired password length; a number between 8 and 128. Users will also be able to choose whether or not they want to include uppercase letters, lowercase letters, numbers and/or special characters in their password. Based on the user's answers, an appropriate password will be returned at the end which they can then utilize. 
 
 ## Visuals
-![Webpage]()
+![Webpage](https://github.com/505laura/password-generator/blob/81d2386eaed55c8ea6b130d41f48b0563911f521/assets/images/password-generator.png?raw=true)
 
 ## Usage
 
